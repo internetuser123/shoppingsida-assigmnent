@@ -30,7 +30,6 @@ const generateShop = () => {
  </div>`}).join('')
 
 shop.innerHTML = shopItems;
-console.log(basket[0].amount)
 
 }
 
@@ -59,9 +58,7 @@ function setLocalStorage(id, operator) {
 
     cartAmount.innerHTML = JSON.parse(localStorage.getItem("data")).reduce(function (accumulator, obj) {
         return accumulator + obj.amount
-        }, 0)
-
-        console.log(basket[itemIndex].amount)   
+        }, 0)  
     }
 
 window.onload = function() {
